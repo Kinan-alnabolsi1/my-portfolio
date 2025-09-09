@@ -1,5 +1,6 @@
 {
   "name": "vite_react_shadcn_ts",
+  "homepage": "https://Kinan-alnabolsi1.github.io/my-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,9 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -47,6 +50,7 @@
     "emailjs-com": "^3.2.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.23.12",
+    "gh-pages": "^6.3.0",
     "i18next": "^25.5.2",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.462.0",
